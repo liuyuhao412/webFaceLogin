@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="login-box">
+                <div class="tab-list">
+                    <div class="current">用户登录</div>
+                    <div>人脸登录</div>
+                </div>
+                <div class="tab-items">
+                    <div class="item" style="display:block;">
+                        <input id="user" type="text" placeholder="请输入用户名">
+                        <input id="pwd" type="password" placeholder="请输入密码">
+                        <button onclick="login()">登录</button>
+
+                    </div>
+                    <div class="item">
+                        <video id="video" width="240" height="180" preload loop muted></video>
+                        <canvas id="canvas" width="240" height="180"></canvas>
+                    </div>
+                </div>
+                
+                <div class="to-register">
+                    若无账号?点击<a href="javascript:void(0):;" onclick="toRegister()">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/tracking-min.js"></script>
+    <script src="js/face-min.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+
+        
+    </script>
+</body>
+
+</html>

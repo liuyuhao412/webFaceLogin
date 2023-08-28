@@ -1,0 +1,94 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    /*网格*/
+    display: grid;
+    background-image: url('../images/bk.jpg');
+}
+
+.content {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(178, 178, 230, 0.6);
+    margin: auto;
+}
+
+.tab-list {
+    height: 60px;
+    width: 400px;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tab-list>div {
+    display: block;
+    width: 200px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "楷体";
+    border-bottom: 1px solid black;
+}
+
+.tab-list>div:hover {
+    background-color: rgba(178, 178, 230, 0.6);
+}
+
+.current {
+    background-color: rgba(178, 178, 230, 0.6);
+}
+
+.tab-items {
+    width: 500px;
+    padding: 0;
+    margin: auto;
+}
+
+.to-register{
+    margin-left:260px ;
+}
+
+.item {
+    display: none;
+    height: 260px;
+    width: 500px;
+    position: relative;
+}
+
+.item input {
+    width: 240px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    padding: 0 20px;
+}
+
+.item button {
+    width: 160px;
+    height: 50px;
+    background-color: rgb(0, 128, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+#video,
+#canvas {
+    top: 40px;
+    left: 130px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#video{
+    z-index: 1;
+}
+
+#canvas{
+    z-index: 0;
+}

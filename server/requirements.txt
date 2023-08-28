@@ -1,0 +1,9 @@
+pip install Flask==1.1.4
+pip install pymysql==1.0.2
+pip install Flask-SQLAlchemy==2.5.1
+pip install markupsafe==2.0.1
+pip install SQLALchemy==1.4.32 
+pip install flask-cors==4.0.0
+pip install  opencv-python==4.6.0.66
+pip install opencv-contrib-python
+pip install numpy==1.23.1
