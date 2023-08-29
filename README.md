@@ -47,9 +47,9 @@
     │  manage.py     //主程序入口        
     │  requirements.txt     //后端环境依赖文件夹        
     │       
-    └─app    //项目文件夹       
-        │  __init__.py     
-        │       
+    └─app    //项目文件夹          
+        │  __init__.py             
+        │               
         ├─mainView    //登录页面的api接口        
         │      loginView.py    
         │      __init__.py    
