@@ -21,7 +21,7 @@
 
 │  README.md                   //帮助文档  
 │     
-├─client	    					//前端文件夹
+├─client	    					//前端文件夹   
 │  │  index.html              //首页   
 │  │  login.html               //登录页面   
 │  │  register.html          //注册页面   
