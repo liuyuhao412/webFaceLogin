@@ -19,47 +19,47 @@
 
 ## 项目结构
 
-│  README.md              //帮助文档
-│ 
-├─client						//前端文件夹
-│  │  index.html           //首页
-│  │  login.html            //登录页面
-│  │  register.html       //注册页面
-│  │
-│  ├─css                       //页面的样式文件夹
-│  │      login.css 
-│  │      register.css 
-│  │      reset.css 
+│  README.md                   //帮助文档  
+│     
+├─client	    					//前端文件夹
+│  │  index.html              //首页
+│  │  login.html               //登录页面
+│  │  register.html          //注册页面
+│  │   
+│  ├─css                          //页面的样式文件夹
+│  │      login.css    
+│  │      register.css     
+│  │      reset.css    
 │  │ 
-│  ├─images               //前端页面所需要的图片文件夹
-│  │      bk.jpg
+│  ├─images                  //前端页面所需要的图片文件夹
+│  │      bk.jpg   
 │  │ 
-│  └─js						 //页面所需要的js文件夹
-│          face-min.js
-│          jquery-3.2.1.min.js
-│          login.js
-│          register.js
-│          tracking-min.js
+│  └─js					   	 //页面所需要的js文件夹
+│          face-min.js   
+│          jquery-3.2.1.min.js   
+│          login.js   
+│          register.js   
+│          tracking-min.js   
 │ 
-└─server                      //后端文件夹
-    │  config.py             //后端数据库的配置文件夹
-    │  faceRecognition.py    //人脸识别的算法
-    │  manage.py          //主程序入口
-    │  requirements.txt   //后端环境依赖文件夹
-    │
-    └─app                      //项目文件夹
-        │  __init__.py
-        │ 
-        ├─mainView       //登录页面的api接口
-        │      loginView.py
-        │      __init__.py
-        │ 
-        ├─models           //创建数据库的文件夹
-        │      login.py 
-        │      __init__.py
-        │ 
-        ├─temp               //用于存放前端实时传来的登录人脸图像
-        └─uploads          //用于存放数据库里的人脸图像
+└─server                         //后端文件夹
+    │  config.py                //后端数据库的配置文件夹
+    │  faceRecognition.py       //人脸识别的算法
+    │  manage.py             //主程序入口
+    │  requirements.txt      //后端环境依赖文件夹
+    │   
+    └─app                         //项目文件夹
+        │  __init__.py   
+        │    
+        ├─mainView          //登录页面的api接口
+        │      loginView.py   
+        │      __init__.py   
+        │    
+        ├─models              //创建数据库的文件夹
+        │      login.py    
+        │      __init__.py   
+        │    
+        ├─temp                  //用于存放前端实时传来的登录人脸图像
+        └─uploads             //用于存放数据库里的人脸图像
 
 ## 项目运行
 
