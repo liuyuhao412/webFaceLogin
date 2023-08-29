@@ -41,25 +41,25 @@
 │            register.js          
 │            tracking-min.js       
 │                  
-└─server     //后端文件夹    
-    │  config.py     //后端数据库的配置文件夹    
-    │  faceRecognition.py     //人脸识别的算法    
-    │  manage.py     //主程序入口    
-    │  requirements.txt     //后端环境依赖文件夹    
-    │  
-    └─app    //项目文件夹    
-        │  __init__.py
-        │  
-        ├─mainView    //登录页面的api接口    
-        │      loginView.py
-        │      __init__.py
-        │      
-        ├─models    //创建数据库的文件夹    
-        │      login.py
-        │      __init__.py
-        │      
-        ├─temp       //用于存放前端实时传来的登录人脸图像     
-        └─uploads     //用于存放数据库里的人脸图像     
+└─server     //后端文件夹       
+    │  config.py     //后端数据库的配置文件夹        
+    │  faceRecognition.py     //人脸识别的算法        
+    │  manage.py     //主程序入口        
+    │  requirements.txt     //后端环境依赖文件夹        
+    │       
+    └─app    //项目文件夹       
+        │  __init__.py     
+        │       
+        ├─mainView    //登录页面的api接口        
+        │      loginView.py    
+        │      __init__.py    
+        │          
+        ├─models    //创建数据库的文件夹        
+        │      login.py     
+        │      __init__.py      
+        │          
+        ├─temp       //用于存放前端实时传来的登录人脸图像        
+        └─uploads     //用于存放数据库里的人脸图像        
 ## 项目运行
 
 * 在config.py文件夹里配置数据库的相关信息。
