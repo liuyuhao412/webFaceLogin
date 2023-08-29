@@ -27,10 +27,10 @@
 │  │  register.html    //注册页面    
 │  │  
 │  ├─css    //页面的样式文件夹    
-│  │      login.css
-│  │      register.css
-│  │      reset.css
-│  │      
+│  │      login.css    
+│  │      register.css    
+│  │      reset.css    
+│  │          
 │  ├─images      //前端页面所需要的图片文件夹    
 │  │      bk.jpg
 │  │      
