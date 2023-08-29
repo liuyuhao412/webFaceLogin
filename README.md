@@ -35,11 +35,11 @@
   │        bk.jpg        
   │      
   └─js     //页面所需要的js文件夹        
-          face-min.js        
-          jquery-3.2.1.min.js        
-          login.js        
-          register.js        
-          tracking-min.js        
+             face-min.js        
+             jquery-3.2.1.min.js        
+             login.js        
+             register.js        
+             tracking-min.js        
       
 └─server         //后端文件夹        
     │  config.py            //后端数据库的配置文件夹     
