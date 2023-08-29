@@ -20,27 +20,27 @@
 ## 项目结构
 
 │  README.md      //帮助文档       
-│     
+  
 ├─client     //前端文件夹       
-│  │  index.html        //首页        
-│  │  login.html             //登录页面        
-│  │  register.html          //注册页面        
-│  │        
-│  ├─css               //页面的样式文件夹        
-│  │      login.css         
-│  │      register.css          
-│  │      reset.css         
-│  │         
-│  ├─images         //前端页面所需要的图片文件夹        
-│  │        bk.jpg        
-│  │      
-│  └─js     //页面所需要的js文件夹        
-│          face-min.js        
-│          jquery-3.2.1.min.js        
-│          login.js        
-│          register.js        
-│          tracking-min.js        
-│         
+  │  index.html        //首页        
+  │  login.html             //登录页面        
+  │  register.html          //注册页面        
+  │        
+  ├─css               //页面的样式文件夹        
+  │      login.css         
+  │      register.css          
+  │      reset.css         
+  │         
+  ├─images         //前端页面所需要的图片文件夹        
+  │        bk.jpg        
+  │      
+  └─js     //页面所需要的js文件夹        
+          face-min.js        
+          jquery-3.2.1.min.js        
+          login.js        
+          register.js        
+          tracking-min.js        
+      
 └─server         //后端文件夹        
     │  config.py            //后端数据库的配置文件夹     
     │  faceRecognition.py      //人脸识别的算法      
