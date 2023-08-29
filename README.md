@@ -34,13 +34,13 @@
   ├─images         //前端页面所需要的图片文件夹        
   │        bk.jpg        
   │      
-  └─js     //页面所需要的js文件夹        
-             face-min.js        
-             jquery-3.2.1.min.js        
-             login.js        
-             register.js        
-             tracking-min.js        
-      
+  ├─js     //页面所需要的js文件夹        
+  │           face-min.js        
+  │           jquery-3.2.1.min.js        
+  │           login.js        
+  │           register.js        
+  │           tracking-min.js        
+  │    
 └─server         //后端文件夹        
     │  config.py            //后端数据库的配置文件夹     
     │  faceRecognition.py      //人脸识别的算法      
