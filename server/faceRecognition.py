@@ -30,26 +30,29 @@ def change_img(temp_img):
     img = cv2.resize(img,(128,128))
     return img
 
+def train_model():
+    listdirs,imgs,targets = load_data()
+    if imgs != [] :
+        face_recognizer=cv2.face.EigenFaceRecognizer_create() 
+        face_recognizer.train(imgs,targets)
+        face_recognizer.save('./face_recognition.xml')
+        return "数据加载成功"
+    else:
+        return "数据加载成功"
+    
 
 def face_recognition(temp_img):
     #预测的数据处理
     temp_img = change_img(temp_img)
-    #加载数据
-    listdirs,imgs,targets = load_data()
-    # print(listdirs,imgs,targets)
-    
-    #加载人脸识别的算法
-    face_recognizer=cv2.face.EigenFaceRecognizer_create()     #特征脸(EigenFaces)人脸识别
-    #算法训练
-    face_recognizer.train(imgs,targets)
-    #进行预测
+    face_recognizer=cv2.face.EigenFaceRecognizer_create() 
+    face_recognizer.read('./face_recognition.xml')
     target,confidence = face_recognizer.predict(temp_img) 
+    listdirs = os.listdir('./app/uploads')
     img_path = listdirs[target]
     name = img_path.split('.')[0]
-    print(name,confidence)
-    if confidence < 500:
+    print(confidence)
+    if confidence < 1000:
         return name
     else:
-        name=''
-        return name
+        return ' '
     

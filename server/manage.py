@@ -1,8 +1,10 @@
 from app import create_app
 from app import db
 from app.models.login import LoginModel
+from faceRecognition import train_model
 
 app = create_app('development')
+train_model()
 #创建数据库所有表的函数
 def create_db(app):
     db.init_app(app),

@@ -8,6 +8,7 @@ from PIL import Image
 from io import BytesIO
 from hashlib import md5
 import time
+from faceRecognition import train_model
 
 #将base64图片转换成jpg图片，并且返回图片的路径(注册)
 def base64_to_image(username,base64String):
@@ -62,6 +63,7 @@ def Register():
                 registerUser.imgPath = base64_to_image(username,img)
                 db.session.add(registerUser)
                 db.session.commit()
+                train_model()
                 return jsonify({'code':'1', 'msg': '注册成功'})
             else:
                 return jsonify({'code':'0', 'msg': '两次密码不一致'})
@@ -91,6 +93,7 @@ def faceLogin():
     img = data['img']
     img_path = base64_to_image_login(img)
     name = face_recognition(img_path)
+    print(name)
     loginUser = LoginModel.query.filter(LoginModel.username==name).first()
     if loginUser:
         return jsonify({'code':'1', 'msg': '登录成功'})
